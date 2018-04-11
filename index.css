@@ -30,6 +30,18 @@ button {
   display: flex;
   justify-content: center; 
   height: 50px;
-  width: 500px;
+}
+
+.js-search-form > input {
+  width: 300px;
+} 
+
+.js-search-form > button {
+  width: 80px;
+  font-size: 20px;
+}
+
+input {
+  font-size: 20px;
 }
 
