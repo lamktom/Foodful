@@ -29,11 +29,13 @@ button {
 .js-search-form {
   display: flex;
   justify-content: center; 
+
   height: 50px;
 }
 
 .js-search-form > input {
-  width: 300px;
+  width: 450px;
+  text-align: center;
 } 
 
 .js-search-form > button {
