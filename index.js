@@ -1,19 +1,24 @@
-
+fatsecret.setContainer("my_container");
+fatsecret.setCanvas("home");
 
 // consts for endpoints keys
-const FOOD2FORK_URL = "http://food2fork.com/api/search"; 
+const YUMMLY_URL = "http://api.yummly.com/v1/api/recipes"; 
 const FATSECRET_URL = "https://platform.fatsecret.com/"; 
 
-const f2f_key = "2e51c7a2be396263cadc671eb7de55d1";
+const y_app_id = "23406cce"
+const y_key = "edfd201c5bce9ccf028432345e2e7e23";
 const fs_key = "69d01778942a4e9ca437e7d97444f98f"; 
 
 //get data from api 
 function getApiData(searchTerm, callback) {
 	const settings = {
-		url: FOOD2FORK_URL, 
+		// parameters
+		url: YUMMLY_URL, 
 		data: {
-			part: 'recipes',
-			key: f2f_key, 
+			// part: 'recipes',
+			_app_key: y_key, 
+			_app_id: y_app_id,
+			requirePictures: true,  
 			q: searchTerm 
 		}, 
 		dataType: 'jsonp', 
