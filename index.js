@@ -22,7 +22,7 @@ function getApiData(searchTerm, callback) {
 		}, 
 		dataType: 'jsonp', 
 		type: 'GET',
-		success: callback,
+		success: callback
 	};
 	$.ajax(settings); 
 }
@@ -32,7 +32,7 @@ function renderResult(result) {
 	console.log(result);
 	return `
 		<div> 
-			<a href="https://www.yummly.com/recipes/${result.id}"><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"></a>
+			<a href="https://www.yummly.com/recipes/${result.id}"><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/></a>
 		</div>
   	`; 
 }
@@ -51,7 +51,7 @@ function watchSubmit() {
 
 		const queryTarget = $(event.currentTarget).find('.js-query');
 		const query = queryTarget.val();  
-		console.log(query);
+		// console.log(query);
 		// clear out input 
 		queryTarget.val(""); 
 		getApiData(query, displayRecipes); 
