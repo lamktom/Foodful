@@ -14,7 +14,6 @@ function getApiData(searchTerm, callback) {
 	const settings = {
 		url: YUMMLY_URL, 
 		data: {
-			// part: 'recipes',
 			_app_key: y_key, 
 			_app_id: y_app_id,
 			requirePictures: true,  
@@ -31,17 +30,30 @@ function getApiData(searchTerm, callback) {
 function renderResult(result) {
 	console.log(result);
 	return `
-		<div> 
-			<a href="https://www.yummly.com/recipes/${result.id}"><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/></a>
-		</div>
+		<div id='container'>
+			<div class='recipebox'>
+				<div>${result.recipeName}</div>
+
+				<div> 
+					<a href="https://www.yummly.com/recipes/${result.id}"><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/></a>
+				</div>
+			</div>
+		</div> 
   	`; 
 }
 
 //show recipes 
 function displayRecipes(data) {
-	const results = data.items.map((item, index) => renderResult(item)); 
-	$('.js-search-results').html(results); 
+    console.log(data);
+    //const results = data.matches.map((item, index) => renderResult(item)); 
+    const results = data.matches.map(i => renderResult(i));
+    $('.js-search-results').html(results); 
 }
+
+// function displayRecipes(data) {
+// 	const results = data.items.map((item, index) => renderResult(item)); 
+// 	$('.js-search-results').html(results); 
+// }
 
 
 // when user enters ingredients and clicks submit 
