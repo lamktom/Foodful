@@ -4,26 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Foodful</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Courgette|Roboto" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
   	<main role='main'>
-		<h1>Foodful.</h1>
-		<h2>Making the most of your leftover ingredients</h2>
+			<h1>Foodful.</h1>
+			<h2>Your destination for recipes and nutrition facts</h2>
 
-		<form action="#" class="js-search-form">
-			<label for="query"></label>
-  			<input type="text" class="js-query" placeholder="What ingredients do you have to cook with?">
-  			<button type="submit">Search</button> <br>
-  		</form>
+			<form action="#" class="js-search-form">
+				<label for="query"></label>
+	  			<input type="text" class="js-query" placeholder="What ingredients do you have to cook with?">
+	  			<button type="submit">Search Recipes</button> <br>
+			</form>
 
-      <!-- display results -->
-      <div class='js-search-results'></div> 
+	    <div id="my_container" class="fatsecret_container"></div>
 
+	    <!-- display results -->
+	    <div class='js-search-results'></div> 
+      
+      <!-- footer -->
+      <footer>
+        Recipe search powered by <a href='http://www.yummly.co/recipes'><img alt='Yummly' src='https://static.yummly.co/api-logo.png'/></a>
+      </footer>
   	</main>
   	
-  	<!-- <script src="http://platform.fatsecret.com/js?key=69d01778942a4e9ca437e7d97444f98f&ampauto_load=true"></script> -->
+  	<script src="http://platform.fatsecret.com/js?key=69d01778942a4e9ca437e7d97444f98f&ampauto_load=true"></script>
   	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
   </body>

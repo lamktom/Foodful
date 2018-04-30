@@ -1,13 +1,13 @@
-// fatsecret.setContainer("my_container");
-// fatsecret.setCanvas("home");
+fatsecret.variables.navOptions = fatsecret.navFeatures.home | fatsecret.navFeatures.diet_calendar;
+fatsecret.setContainer("my_container");
+fatsecret.setCanvas("home");
 
 // consts for endpoints keys
 const YUMMLY_URL = "http://api.yummly.com/v1/api/recipes"; 
-// const FATSECRET_URL = "https://platform.fatsecret.com/"; 
+const FATSECRET_URL = "https://platform.fatsecret.com/"; 
 
 const y_app_id = "23406cce"
 const y_key = "edfd201c5bce9ccf028432345e2e7e23";
-// const fs_key = "69d01778942a4e9ca437e7d97444f98f"; 
 
 //get data from api 
 function getApiData(searchTerm, callback) {
@@ -26,18 +26,13 @@ function getApiData(searchTerm, callback) {
 	$.ajax(settings); 
 }
 
-
+//render results from api 
 function renderResult(result) {
-	console.log(result);
 	return `
 		<div id='container'>
-			<div class='recipebox'>
-				<div>${result.recipeName}</div>
-
-				<div> 
-					<a href="https://www.yummly.com/recipes/${result.id}"><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/></a>
+				<div>					
+					<a href="https://www.yummly.com/recipe/${result.id}" target='_blank'><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/><span class='rname'>${result.recipeName}</span></a>
 				</div>
-			</div>
 		</div> 
   	`; 
 }
@@ -45,16 +40,10 @@ function renderResult(result) {
 //show recipes 
 function displayRecipes(data) {
     console.log(data);
-    //const results = data.matches.map((item, index) => renderResult(item)); 
-    const results = data.matches.map(i => renderResult(i));
+
+    const results = data.matches.map(m => renderResult(m));
     $('.js-search-results').html(results); 
 }
-
-// function displayRecipes(data) {
-// 	const results = data.items.map((item, index) => renderResult(item)); 
-// 	$('.js-search-results').html(results); 
-// }
-
 
 // when user enters ingredients and clicks submit 
 function watchSubmit() {
@@ -63,7 +52,7 @@ function watchSubmit() {
 
 		const queryTarget = $(event.currentTarget).find('.js-query');
 		const query = queryTarget.val();  
-		// console.log(query);
+
 		// clear out input 
 		queryTarget.val(""); 
 		getApiData(query, displayRecipes); 
