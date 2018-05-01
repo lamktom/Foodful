@@ -46,12 +46,7 @@ input {
   height: 320px;
   width: 320px;
   postion: relative;
-}
-
-#container {
-  float: left;
-  width: 33%;
-  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .js-search-results {
@@ -85,8 +80,9 @@ a:link {
 footer {
   position: fixed;
   bottom: 1%;
-  right: 1%;
+  right: 0.1%;
   color: gray; 
+  font-size: 80%; 
 }
 
 #my_container {

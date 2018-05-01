@@ -29,7 +29,7 @@ function getApiData(searchTerm, callback) {
 //render results from api 
 function renderResult(result) {
 	return `
-		<div id='container'>
+		<div class='col-4' class='recipebox'>
 			<div>					
 				<a href="https://www.yummly.com/recipe/${result.id}" target='_blank'><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/><span class='rname'>${result.recipeName}</span></a>
 			</div>

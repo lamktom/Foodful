@@ -6,33 +6,44 @@
     <title>Foodful</title>
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Courgette|Roboto" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css"/>
+		<link href="float-grid.css" rel="stylesheet" type="text/css"/>  
   </head>
+
   <body>
-  	<main role='main'>
-			<h1>Foodful.</h1>
-			<h2>Your destination for nutrition facts and recipes</h2>
-			
-			<div id="my_container" class="fatsecret_container"></div><br>
-			
-			<form action="#" class="js-search-form">
-				<label for="query"></label>
-	  			<input type="text" class="js-query" placeholder="What ingredients do you have to cook with?">
-	  			<button type="submit">Search Recipes</button> 
-			</form>
+  	<div id='container'>
+	  	<main role='main'>
+	  		<header role='banner'>
+	  			<div class='col-12'>
+						<h1>Foodful.</h1>
+						<h2>Your destination for nutrition facts and recipes</h2>
+					</div>
+				</header>
 
-	    
+				<div class='col-12'>
+					<div id="my_container" class="fatsecret_container"></div><br>
+				</div>
 
-	    <!-- display results -->
-	    <div class='js-search-results'></div> 
-      
-      <!-- footer -->
-      <footer>
-        Recipe search powered by <a href='http://www.yummly.co/recipes'><img alt='Yummly' src='https://static.yummly.co/api-logo.png'/></a>
-      </footer>
-  	</main>
+				<div class='col-12'>
+					<form action="#" class="js-search-form">
+						<label for="query"></label>
+			  			<input type="text" class="js-query" placeholder="What ingredients do you have to cook with?">
+			  			<button type="submit">Search Recipes</button> 
+					</form>
+				</div>
+
+		    <!-- display results -->
+		    <div class='js-search-results'></div> 
+	      
+	      <!-- footer -->
+	      <footer>
+	        Recipe search powered by <a href='http://www.yummly.co/recipes'><img alt='Yummly' src='https://static.yummly.co/api-logo.png'/></a>
+	      </footer>
+	  	</main>
+  	</div>
   	
   	<script src="http://platform.fatsecret.com/js?key=69d01778942a4e9ca437e7d97444f98f&ampauto_load=true"></script>
   	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
   </body>
+
 </html>
