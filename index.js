@@ -30,19 +30,19 @@ function getApiData(searchTerm, callback) {
 function renderResult(result) {
 	return `
 		<div id='container'>
-				<div>					
-					<a href="https://www.yummly.com/recipe/${result.id}" target='_blank'><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/><span class='rname'>${result.recipeName}</span></a>
-				</div>
+			<div>					
+				<a href="https://www.yummly.com/recipe/${result.id}" target='_blank'><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/><span class='rname'>${result.recipeName}</span></a>
+			</div>
 		</div> 
   	`; 
 }
 
 //show recipes 
 function displayRecipes(data) {
-    console.log(data);
+  console.log(data);
 
-    const results = data.matches.map(m => renderResult(m));
-    $('.js-search-results').html(results); 
+  const results = data.matches.map(m => renderResult(m));
+  $('.js-search-results').html(results); 
 }
 
 // when user enters ingredients and clicks submit 
