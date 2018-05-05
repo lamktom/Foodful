@@ -5,13 +5,13 @@ https://lamktom.github.io/Foodful/
 
 # Screenshots
 Landing Page: 
-![Landing page](screenshots/foodful-landing-page.jpg)
+![Landing page](Screenshots/foodful-landing-page.jpg)
 
 Recipe Search Results: 
-![Recipe results](screenshots/foodful-recipe-search.jpg)
+![Recipe results](Screenshots/foodful-recipe-search.jpg)
 
 Nutrition Facts: 
-![Nutrition facts](screenshots/foodful-nutrition-facts.jpg)
+![Nutrition facts](Screenshots/foodful-nutrition-facts.jpg)
 
 #Summary
 Users may enter ingredients that they would like to cook with to explore recipies and nutrition facts. When entering multiple ingredients for recipe search, separate with commas.
