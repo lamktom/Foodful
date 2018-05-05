@@ -19,7 +19,7 @@ function getApiData(searchTerm, callback) {
 			requirePictures: true,  
 			q: searchTerm
 		}, 
-		dataType: 'jsonp', 
+		dataType: 'jsonp',  
 		type: 'GET',
 		success: callback
 	};
@@ -27,11 +27,15 @@ function getApiData(searchTerm, callback) {
 }
 
 //render results from api 
+//markup solved --> css
 function renderResult(result) {
 	return `
 		<div class='col-4' class='recipebox'>
-			<div>					
-				<a href="https://www.yummly.com/recipe/${result.id}" target='_blank'><img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/><span class='rname'>${result.recipeName}</span></a>
+			<div class="relative-parent">
+				<a href="https://www.yummly.com/recipe/${result.id}" class="absolute-child" target='_blank'>
+					<img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/>
+					<span class='rname'>${result.recipeName}</span>		
+				</a>
 			</div>
 		</div> 
   	`; 
@@ -60,13 +64,3 @@ function watchSubmit() {
 }
 
 $(watchSubmit); 
-
-
-
-
-
-
-
-
-
-
