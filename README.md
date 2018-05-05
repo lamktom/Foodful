@@ -1,3 +1,20 @@
-Welcome to Foodful! 
+# Foodful
 
-Enter leftover ingredients that you would like to cook with and explore recipies and nutrition facts. When entering multiple ingredients, please separate them with commas in between. 
+# Link to live app
+https://lamktom.github.io/Foodful/
+
+# Screenshots
+Landing Page: 
+![Landing page](screenshots/foodful-landing-page.jpg)
+
+Recipe Search Results: 
+![Recipe results](screenshots/foodful-recipe-search.jpg)
+
+Nutrition Facts: 
+![Nutrition facts](screenshots/foodful-nutrition-facts.jpg)
+
+#Summary
+Users may enter ingredients that they would like to cook with to explore recipies and nutrition facts. When entering multiple ingredients for recipe search, separate with commas.
+
+#Technologies Used 
+HTML, CSS, JavaScript, jQuery, AJAX
