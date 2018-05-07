@@ -32,6 +32,7 @@ function renderResult(result) {
 	return `
 		<div class='col-4' class='recipebox'>
 			<div class="relative-parent">
+			<a id='target'></a>
 				<a href="https://www.yummly.com/recipe/${result.id}" class="absolute-child" target='_blank'>
 					<img class="js-image" src="${result.smallImageUrls}" alt="Recipe Thumbnail"/>
 					<span class='rname'>${result.recipeName}</span>		
