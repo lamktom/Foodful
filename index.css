@@ -2,11 +2,21 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center; 
+  background-image: url(http://www.powerpointhintergrund.com/uploads/food-background-2.jpg);
+}
+
+main {
+  position: relative;
+  right: 10px;
+}
+
+#container { 
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 p {
   font-size: 8em;
-  color: #00aee6;
+  color: green;
   margin-bottom: 0;
   margin-top: 10px;
   text-align: center; 
@@ -22,12 +32,12 @@ h2 {
 h3 {
   text-align: center; 
   font-size: 1.5em;
-  color: #00aee6;
+  color: green;
   font-weight: bold;
 }
 
 button {
-  background-color: #00aee6;
+  background-color: green;
   color: white;
   margin-left: -5px;
 }
