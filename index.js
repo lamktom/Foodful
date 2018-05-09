@@ -25,7 +25,7 @@ function getApiData(searchTerm, callback) {
 	};
 	$.ajax(settings); 
 }
-
+ 
 //render results from api 
 function renderResult(result) {
 	return `

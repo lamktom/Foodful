@@ -8,7 +8,7 @@ https://lamktom.github.io/Foodful/
 If the app is not loading, it may be that your browser is blocking the content, please follow these steps to get the app to load. 
 
 This is what it it looks like when the browser is preventing the app from running: 
-
+ 
 ![Blocked scripts page](Screenshots/foodful-blocked-scripts.JPG)
 
 Look for this icon on your address bar and click it: 
