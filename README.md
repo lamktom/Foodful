@@ -4,6 +4,21 @@ Your destination for nutrition facts and recipes.
 # Link to live app
 https://lamktom.github.io/Foodful/
 
+# How to load unsafe scripts (if app not loading):
+If the app is not loading, it may be that your browser is blocking the content, please follow these steps to get the app to load. 
+
+This is what it it looks like when the browser is preventing the app from running: 
+
+![Blocked scripts page](Screenshots/foodful-blocked-scipts.JPG)
+
+Look for this icon on your address bar and click it: 
+
+![Address bar icon](Screenshots/foodful-address-bar.JPG)
+
+Click "Load Unsafe Scripts" to load the entire Landing Page (see next section for screenshot): 
+
+![Load Unsafe Scripts](Screenshots/foodful-load-unsafe-scripts.JPG)
+
 # Screenshots
 Landing Page: 
 

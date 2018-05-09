@@ -27,7 +27,6 @@ function getApiData(searchTerm, callback) {
 }
 
 //render results from api 
-//markup solved --> css
 function renderResult(result) {
 	return `
 		<div class='col-4' class='recipebox'>
@@ -44,10 +43,12 @@ function renderResult(result) {
 
 //show recipes 
 function displayRecipes(data) {
-  console.log(data);
-
   const results = data.matches.map(m => renderResult(m));
   $('.js-search-results').html(results); 
+
+  if (results.length === 0) {
+  	alert("Looks like the ingredient(s) you entered didn't return any recipes. How about trying some different ones?");
+  }
 }
 
 // when user enters ingredients and clicks submit 
