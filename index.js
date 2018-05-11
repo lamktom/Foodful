@@ -44,7 +44,7 @@ function renderResult(result) {
 //show recipes 
 function displayRecipes(data) {
   const results = data.matches.map(m => renderResult(m));
-  $('.js-search-results').html(results); 
+  $('.js-search-results').html(results);
 
   if (results.length === 0) {
   	alert("Looks like the ingredient(s) you entered didn't return any recipes. How about trying some different ones?");
