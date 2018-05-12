@@ -4,6 +4,19 @@ Your destination for nutrition facts and recipes.
 # Link to live app
 https://lamktom.github.io/Foodful/
 
+# Screenshots
+Landing Page: 
+
+![Landing page](Screenshots/foodful-landing-page.JPG)
+
+Recipe Search Results: 
+
+![Recipe results](Screenshots/foodful-recipe-search.JPG)
+
+Nutrition Facts: 
+
+![Nutrition facts](Screenshots/foodful-nutrition-facts.JPG)
+
 # How to load unsafe scripts (if app not loading):
 If the app is not loading, it may be that your browser is blocking the content, please follow these steps to get the app to load. 
 
@@ -18,19 +31,6 @@ Look for this icon on your address bar and click it:
 Click "Load Unsafe Scripts" to load the entire Landing Page (see next section for screenshot): 
 
 ![Load Unsafe Scripts](Screenshots/foodful-load-unsafe-scripts.JPG)
-
-# Screenshots
-Landing Page: 
-
-![Landing page](Screenshots/foodful-landing-page.JPG)
-
-Recipe Search Results: 
-
-![Recipe results](Screenshots/foodful-recipe-search.JPG)
-
-Nutrition Facts: 
-
-![Nutrition facts](Screenshots/foodful-nutrition-facts.JPG)
 
 # Summary
 Users may enter ingredients that they would like to cook with to explore recipies and nutrition facts. When entering multiple ingredients for recipe search, separate with commas.
