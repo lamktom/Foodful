@@ -3,7 +3,7 @@ fatsecret.setContainer("my_container");
 fatsecret.setCanvas("home");
 
 // consts for endpoints keys
-const YUMMLY_URL = "http://api.yummly.com/v1/api/recipes"; 
+const YUMMLY_URL = "https://api.yummly.com/v1/api/recipes"; 
 const FATSECRET_URL = "https://platform.fatsecret.com/"; 
 
 const y_app_id = "23406cce"
