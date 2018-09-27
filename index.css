@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center; 
-  background-image: url(http://www.powerpointhintergrund.com/uploads/food-background-2.jpg);
+  background-image: url("background.jpg");
 }
 
 main {
