@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center; 
-  background-image: url("background.jpg");
+  background-image: url("https://lamktom.github.io/Foodful/background.jpg");
 }
 
 main {
