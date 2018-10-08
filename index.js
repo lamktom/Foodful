@@ -43,7 +43,7 @@ function renderResult(result) {
 
 //show recipes 
 function displayRecipes(data) {
-  const results = data.matches.map(m => renderResult(m));
+  const results = data.matches.map(match => renderResult(match));
   $('.js-search-results').html(results);
 
   if (results.length === 0) {
